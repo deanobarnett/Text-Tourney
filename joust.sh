@@ -53,7 +53,7 @@ done
 
 if [ $playerOneHealth -le 0 ]
 then
-	echo "$name1 is victorius! To the victor goes the spoils!"
-else
 	echo "$name2 is victorius! To the victor goes the spoils!"
+else
+	echo "$name1 is victorius! To the victor goes the spoils!"
 fi
