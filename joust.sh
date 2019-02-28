@@ -3,6 +3,18 @@
 playerOneHealth=1000
 playerTwoHealth=1000
 
+cat <<EOM
+  _                 _   _             
+ (_)               | | (_)            
+  _  ___  _   _ ___| |_ _ _ __   __ _ 
+ | |/ _ \| | | / __| __| | '_ \ / _  |
+ | | (_) | |_| \__ \ |_| | | | | (_| |
+ | |\___/ \__,_|___/\__|_|_| |_|\__, |
+_/ |                             __/ |
+|__/                             |___/
+EOM
+
+echo ""
 echo "Enter the name of contestant number 1!"
 read -r name1
 echo "Welcome to the Joust $name1! Are you wearing your cup?"
@@ -41,7 +53,7 @@ done
 
 if [ $playerOneHealth -le 0 ]
 then
-	echo "$name1 is victorius! To he victor goes the spoils!"
+	echo "$name1 is victorius! To the victor goes the spoils!"
 else
-	echo "$name2 is victorius! To he victor goes the spoils!"
+	echo "$name2 is victorius! To the victor goes the spoils!"
 fi
